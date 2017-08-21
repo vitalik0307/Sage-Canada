@@ -1,0 +1,38 @@
+input[type="text"],
+input[type="email"],
+textarea
+{
+   background-color: #fff;
+   color: #696969 ;
+   border: none;
+   box-shadow: none;
+   border-bottom: solid #696969 ;
+}
+
+label{
+    color:#696969 ;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+input[type="submit"]{
+    background-color: #F04 ;
+    color: #fff;
+    font-size: 1.24rem;
+    font-weight: 600;
+    box-shadow: none;
+    border-radius: 5px;
+    line-height: 250%;
+    width: 8em;
+    border: none;
+
+
+}
+.contactTitle{
+  text-align: center;
+  h2{
+    font-weight: bold;
+    color:#F04;
+    margin:40px 0;
+  }
+}

@@ -1,0 +1,345 @@
+.logoImage2{
+  margin-top: -15px !important;
+}
+.logoImage{
+  img{
+  margin-top: 24px !important;
+  margin-left: 14px !important;}
+}
+.red{
+  background-color: #f04 !important;
+}
+.red:hover{
+  background-color: #f04 !important;
+}
+.margin-mobile{
+  margin-top: -3rem !important;
+}
+
+.title-bar2{
+  margin-top:-3rem;
+}
+.menu-icon{
+    top: 2rem;
+}
+
+// Navigation breakpoints
+.desktop-menu,
+.top-bar-left {
+ @include show-for(medium);
+}
+
+#mobile-menu,
+.title-bar {
+ @include hide-for(medium);
+}
+@media (min-width: 1050px) {
+
+.margin-mobile{
+  margin-top: 0rem !important;
+}
+
+.title-bar2{
+  margin-top:-3rem;
+}
+.menu-icon{
+    top: 2rem;
+}
+}
+
+// Mobile menu
+
+@media (max-width: 1150px) {
+
+
+ .title-bar .menu-icon {
+   margin-left: 19rem;
+   margin-right: 0.25rem;
+   background-color: #da384c ;
+   height: 21px;
+   width: 3rem;
+ }
+
+ .title-bar {
+   background: white;
+   color: white;
+ }
+
+ .menu-icon:hover::after {
+   color: white;
+ }
+}
+
+.off-canvas {
+
+ > ul.menu {
+   height: 100vh;
+   padding: 1rem;
+   a {
+     color: $white;
+     font-weight: 600;
+     font-size: rem-calc(18);
+     opacity: .75;
+     font-family: 'Raleway', sans-serif;
+   }
+
+   .is-accordion-submenu-parent > a::after {
+     display: block;
+     width: 0;
+     height: 0;
+     border: inset 6px;
+     content: '';
+     border-bottom-width: 0;
+     border-top-style: solid;
+     border-color: $white transparent transparent;
+     position: absolute;
+     top: 50%;
+     margin-top: -3px;
+     right: 1rem;
+   }
+ }
+ .menu .active > a {
+   background-color: lighten($outer-space, 10%);
+ }
+}
+
+.title-bar-title {
+ a {
+   font-size: 1rem;
+   color: $white;
+ }
+
+}
+
+//                       Tablet and desktop menu
+.top-bar {
+ .menu .home ul {
+   font-size: 1.4rem;
+   color: $white;
+   padding-right: 30%;
+ }
+ .menu a {
+   height: 45px;
+   line-height: 45px;
+   color: $dark-gray;
+   padding-top: 0;
+   padding-bottom: 0;
+   font-weight: bold;
+   font-size: 1.2rem;
+   line-height: 1;
+   font-family: 'Raleway', sans-serif;
+   /*&:hover:not(.button) {
+background-color: $white;
+}*/
+ }
+ .menu .active > a {
+   background-color: lighten($outer-space, 10%);
+ }
+ .menu > li:not(.menu-text) > a {
+   padding: 35px;
+ }
+ .menu li:not(:last-child) {
+   padding-left: 0px;
+ }
+ .dropdown.menu .submenu {
+   border: 0;
+ }
+ .dropdown.menu .has-submenu.is-down-arrow a {
+   padding-right: 2rem;
+ }
+ .dropdown.menu .has-submenu.is-down-arrow > a::after {
+   border: 0;
+ }
+ .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after {
+   display: none;
+ }
+}
+
+// Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix"
+// https://css-tricks.com/snippets/css/clear-fix/
+.post-navigation:before,
+.post-navigation:after {
+ content: "";
+ display: table;
+}
+
+.post-navigation:after {
+ clear: both;
+}
+
+.nav-previous {
+ float: left;
+}
+
+.nav-next {
+ float: right;
+}
+
+.top-bar,
+.top-bar-right ul {
+ background-color: $white;
+ margin-top: 24px;
+ // margin-right: 5%;
+}
+
+.dropdown > li:last-child a {
+ background-color: #da384c ;
+ color: white;
+}
+
+.title-bar {
+ padding-bottom: 0px;
+
+}
+
+// .red{
+//   background-color: #f04 !important;
+// }
+// .red:hover{
+//   background-color: #f04 !important;
+// }
+// html { margin-top: 0 !important; }
+// body {
+//   margin-top: 2rem; }
+
+// .title-bar {
+//   // background: #;
+//   padding: 0.9rem; }
+// .top-bar-right {
+// padding-top:25px;}
+// .top-bar {
+//   background: #fff !important; }
+//   .top-bar ul {
+//     background: #fff; }
+//     .top-bar ul li {
+//       background: #fff; }
+//       .top-bar ul li a {
+//         color: dimgrey; }
+
+// .menu-text {
+//   color: dimgrey; }
+//   @media only screen and (max-width: 40em) {
+//     .menu-text {
+//       display: none !important; } }
+
+// @media only screen and (min-width: 40em) {
+//   .menu:last-child {
+//     border-left: 1px solid #fff; }
+
+//   .menu:first-child {
+//     border-left: none; }
+
+//   .menu li:not(:last-child) {
+//     border-right: 1px solid #fff; } }
+// .dropdown.menu .submenu {
+//   border: none; }
+
+// .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+//   border-color: #fff transparent transparent; }
+
+// .is-drilldown-submenu-parent > a::after {
+//   border-color: transparent transparent transparent #fff; }
+
+// .js-drilldown-back::before {
+//   border-color: transparent #fff transparent transparent; }
+
+//end//
+// Navigation breakpoints
+.desktop-menu, .top-bar-left {
+  @include show-for(medium);
+}
+
+#mobile-menu, .title-bar {
+  @include hide-for(medium);
+}
+
+// Mobile menu
+.off-canvas {
+  > ul.menu {
+    height: 100vh;
+    padding: 1rem;
+
+    a {
+      color: $white;
+      font-weight: 600;
+      font-size: rem-calc(18);
+      opacity: .75;
+    }
+
+    .is-accordion-submenu-parent > a::after {
+      display: block;
+      width: 0;
+      height: 0;
+      border: inset 6px;
+      content: '';
+      border-bottom-width: 0;
+      border-top-style: solid;
+      border-color: $white transparent transparent;
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      right: 1rem;
+      }
+  }
+
+  .menu .active > a { background-color: lighten($outer-space, 10%); }
+
+
+}
+
+.title-bar-title {
+  a {
+    font-size: 1rem;
+    color: dimgrey;
+  }
+}
+
+// Tablet and desktop menu
+.top-bar {
+  .menu .home a {
+    font-size: 1rem;
+    color: dimgrey;
+  }
+
+  .menu a {
+    height: 45px;
+    line-height: 45px;
+    color: dimgrey;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1;
+
+    &:hover:not(.button) {
+      background-color: #fff;
+    }
+  }
+
+  .menu .active > a { background-color: lighten($outer-space, 10%); }
+
+  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu li:not(:last-child) { border-right: 1px solid #fff;
+      padding-right: 35px !important;
+    }
+
+  .dropdown.menu .submenu { border: 0; }
+  .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
+  .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
+  .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+}
+
+// Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix"
+// https://css-tricks.com/snippets/css/clear-fix/
+.post-navigation:before,
+.post-navigation:after {
+  content: "";
+  display: table;
+}
+
+.post-navigation:after {
+  clear:both;
+}
+
+.nav-previous { float:left; }
+.nav-next { float:right; }

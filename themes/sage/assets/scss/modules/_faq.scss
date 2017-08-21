@@ -1,0 +1,42 @@
+.faq-title{
+	color: #E0394E;
+	font-weight:bolder;
+	text-align: center;
+	margin: 5vh 0 3vh 0;
+}
+
+.faq{
+	//border:none;
+	margin: 0 auto;
+}
+
+.faq-question{
+	//border: none;
+	background: #fff;
+	color: #696969;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+.accordion-title:hover, .accordion-title:focus, .accordion-title:active {
+	background-color: #fff;
+	color: #E0394E;
+}
+
+.faq-answer{
+	color: #696969;
+	font-weight: lighter;
+	font-size: 0.9rem;
+	line-height: 180%;
+}
+
+.accordion-title:hover{
+	background-color: #fff;
+	color: #696969;
+
+}
+
+@media (min-width: 600px) {
+  .faq-question {
+    font-size: 1.3rem;
+  }
+}

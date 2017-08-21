@@ -1,0 +1,247 @@
+footer{
+  p {
+  line-height: 0.6rem;
+}
+
+
+#footer-container {
+  max-width: 100%;
+  width: 100%;
+  //margin: 0 auto;
+  border-top: 1px solid #707070;
+  margin-top: rem-calc(10);
+  #footer {
+    @include grid-row();
+    padding: rem-calc(10) 0;
+    margin-left: 45%;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.icon-button {
+  border-radius: 3.6rem;
+  width: 1.7rem;
+  height: 3.6rem;
+  //margin: 0px 5px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background: white;
+  color: #616161;
+  &:hover span {
+    border-radius: 3.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    //margin: -1.8rem;
+  }
+  i {
+    background: none;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    line-height: 3.6rem;
+    transition: all 0.3s;
+  }
+
+  .icon-button .fi-social-twitter {
+    color: $light-gray;
+  }
+  .icon-button .fi-social-facebook {
+    color: $light-gray;
+  }
+  .icon-button .fi-social-instagram {
+    color: $light-gray;
+  }
+  .icon-button .fi-social-youtube {
+    color: $light-gray;
+  }
+  .icon-button .fi-social-linkedin {
+    color: $light-gray;
+  }
+  .icon-button:hover .fi-social-twitter,
+  .icon-button:hover .fi-social-youtube,
+  .icon-button:hover .fi-social-facebook,
+  .icon-button:hover .fi-social-instagram,
+  .icon-button:hover .fi-social-linkedin {
+    color: $light-gray;
+    font-size: 1.6rem;
+    line-height: 3.9rem;
+  }
+}
+
+#address-text {
+  padding-top: 60px;
+  margin-right: 7.6rem;
+}
+
+footer h6 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  color: darkslategrey;
+
+}
+
+#heart-text {
+  //float: right;
+  margin-right: 13rem;
+  padding-top: 5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.fa-heart {
+  color: #da384c;
+}
+
+.flex-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.strong-text {
+  font-weight: 700;
+}
+
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  width: 50%;
+  //margin-top: 90px;
+}
+
+.flex-footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriber {
+  margin-top: 40px;
+  padding: 1rem;
+  width: 33%;
+  h3 {
+    color: #da384c;
+    font-size: 2rem;
+  }
+  h4 {
+    color: #696969;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  h6{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .email {
+    .email-flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .mc4wp-form-fields {
+      width: 100%;
+    }
+    .email-label {
+      text-align: left;
+      text-transform: uppercase;
+      color: darkslategrey;
+      font-size: 1rem;
+      font-weight: bold;
+
+    }
+    .email-btn {
+      background-color: #da384c;
+      padding: 0rem 3rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+    }
+    .email-box {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid grey;
+      background-color: #FAFAFA;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      padding: 15px;
+      height: auto;
+    }
+  }
+}
+}
+
+//                                            MOBILE                            //
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+footer #heart-text {
+    margin-right: 2rem !important;}
+  }
+
+
+
+@media (min-width: 375px) and (max-width: 600px) {
+  .footer-container {
+    text-align: center;
+    flex-direction: column;
+    .subscriber {
+      text-align: left;
+      width: 100%;
+      .email-flex {
+        flex-direction: column;
+      }
+
+    }
+    #address-text, #heart-text {
+      margin: 0;
+    }
+  
+  .email-btn {
+    background-color: #da384c;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .email-box{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 15px;
+    height: auto;
+    margin-left: -2rem;
+  }
+}
+}
